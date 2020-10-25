@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    background-color: hsl(210, 46%, 95%);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+/* global style */
+.container {
+    display: grid;
+    grid-template-columns: 9fr 2fr;
+    justify-content: space-around;
+    margin: 50px 120px;
+    grid-gap: 20px;
+}
+
+.row-1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+
+}
+
+.row-2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.style__img {
+    border-radius: 50px;
+    height: 35px;
+    width: 35px;
+    border: 1px solid hsl(0, 0%, 100%);
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.opacity-paragrap {
+    opacity: 70%;
+}
+
+.opacity-name {
+    opacity: 50%;
+}
+
+
+/* content style section one row-1 */
+.col-1 {
+    padding: 20px;
+    border-radius: 5px;
+    z-index: -1;
+    position: relative;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(263, 55%, 52%);
+    background-image: url('./assets/images/bg-pattern-quotation.svg');
+    background-repeat: no-repeat;
+    background-position: 15rem top;
+}
+
+.col-2 {
+    padding: 20px;
+    border-radius: 5px;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(217, 19%, 35%);
+}
+
+.content-middle-mod {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* content style section one row-2 */
+.col-1-mod {
+    padding: 20px;
+    border-radius: 5px;
+    color: hsl(219, 29%, 14%);
+    background-color: hsl(0, 0%, 100%);
+}
+
+.col-2-mod {
+    padding: 20px;
+    border-radius: 5px;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(219, 29%, 14%);
+}
+
+/* content style section two */
+.cols {
+    padding: 13px;
+    border-radius: 5px;
+    color: hsl(219, 29%, 14%);
+    background-color: hsl(0, 0%, 100%);
+}
+
+/* responsive  */
+
+@media (max-width: 1266px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .row-1,
+    .row-2 {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
