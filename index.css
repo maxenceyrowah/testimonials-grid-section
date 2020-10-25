@@ -106,7 +106,7 @@ body {
 
 /* responsive  */
 
-@media (max-width: 1266px) {
+@media (max-width: 375px) {
     .container {
         display: grid;
         grid-template-columns: 1fr;
@@ -114,6 +114,23 @@ body {
 
     .row-1,
     .row-2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 300px;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 1300px) {
+    .row-1{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .row-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .container {
         display: grid;
         grid-template-columns: 1fr;
     }
