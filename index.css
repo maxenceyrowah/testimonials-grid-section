@@ -114,6 +114,7 @@ body {
     .row-2 {
         display: grid;
         grid-template-columns: 1fr;
+        min-width: 300px;
     }
 }
 
@@ -126,6 +127,7 @@ body {
     .row-1, .row-2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    min-width: 300px;
 
     }
 }
